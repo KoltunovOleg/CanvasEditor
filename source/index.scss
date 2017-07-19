@@ -1,0 +1,90 @@
+body{
+  background-color: #fff;
+}
+#wrapper{
+  margin: 15px;
+}
+.holder{
+  display: inline-block;
+  background: #f5f2f0;
+}
+.buttons-holder{
+  margin: 10px 0;
+  button{
+    margin: 0 5px 0 0;
+    border: none;
+    background-color: #4682B4;
+    color: whitesmoke;
+    box-shadow: 2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+    &:hover{
+      cursor: pointer;
+      box-shadow: 2px 2px 1px 0px rgba(50, 50, 50, 0.9);
+    }
+    &.disabled,
+    &.disabled:hover{
+      cursor: default;
+      background-color: #E0FFFF;
+      color: gray;
+      box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+    }
+  }
+}
+.mode-selector-holder,
+.line-width-holder,
+.color-holder{
+    margin: 0 0 20px;
+}
+.controls{
+  border-left: 1px solid whitesmoke;
+  display: inline-block;
+  padding: 15px 20px 0px 20px;
+  p{
+    margin: 0 0 20px 0;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    li{
+      margin-bottom: 5px;
+      input[type="checkbox"]{
+        float: right;
+        margin: 5px 10px;
+      }
+    }
+  }
+  
+
+}
+
+
+.canvas-container{
+  display: inline-block;
+  border: 1px solid gray;
+}
+#drawing-mode {
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+#drawing-mode-options {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  margin-top: 10px;
+    padding: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 130px;
+}
+
+.info {
+  display: inline-block;
+  width: 25px;
+  background: #ffc;
+  vertical-align: top;
+  text-align: center;
+  margin: 0 5px 0 0;
+}

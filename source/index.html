@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Editor Canvas</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <h1>Editor Canvas for MobiDev Task</h1>
+      <div class="holder">
+        
+        <div id="drawing-mode-options">
+          <div class="mode-selector-holder">
+            <label for="drawing-mode-selector">Mode:</label>
+            <select id="drawing-mode-selector">
+              <option>Pencil</option>
+              <option>Circle</option>
+              <option>Spray</option>
+              <option>Pattern</option>
+              <option>hline</option>
+              <option>vline</option>
+              <option>square</option>
+              <option>diamond</option>
+            </select>
+          </div>
+          <div class="line-width-holder">
+            <label for="drawing-line-width">Line width:</label>
+            <span class="info">30</span><input type="range" value="30" min="0" max="150" id="drawing-line-width">
+          </div>
+          <div class="color-holder">
+            <label for="drawing-color">Line color:</label>
+            <input type="color" value="#005E7A" id="drawing-color">
+          </div>
+
+        </div>
+
+        <div class="controls">
+          <p>Filters:</p>
+          <ul class="filters_list">
+            <li><label><span>Grayscale:</span> <input type="checkbox" id="grayscale" data-filter="0"></label></li>
+            <li><label><span>Sepia:</span> <input type="checkbox" id="sepia" data-filter="1"></label></li>
+            <li><label><span>Invert:</span> <input type="checkbox" id="invert" data-filter="2"></label></li>
+            <li><label><span>Emboss:</span> <input type="checkbox" id="emboss" data-filter="3"></label></li>
+            <li><label><span>Sharpen:</span> <input type="checkbox" id="sharpen" data-filter="4"></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons-holder">
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="save">Save as image</button>
+        <button id="clear-canvas" class="btn btn-info">Clear</button>
+      </div>
+
+      <canvas id="canvas" width="600" height="450"></canvas>
+  </div>
+</body>
+
+</html>
