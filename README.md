@@ -1,2 +1,2 @@
-# MobiDevCanvasEditor
-# https://koltunovoleg.github.io/MobiDevCanvasEditor/
+CanvasEditor
+https://koltunovoleg.github.io/CanvasEditor/
